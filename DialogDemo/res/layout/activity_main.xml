@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dialogdemo.MainActivity" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:id="@+id/topBar"
+        android:background="#dc143c"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="自定义弹窗"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+            <Button 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/system"
+                android:background="#00bfff"
+                android:textColor="#ffffff"
+                android:text="系统弹窗"
+                />
+            <Button 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/custome"
+                android:background="#00bfff"
+                android:textColor="#ffffff"
+                android:layout_marginTop="22dp"
+                android:text="自定义弹窗"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
